@@ -12,32 +12,45 @@
 </head>
 
 <body>
-    <div class="container" id="header"> <h1>Crystals Collector</h1></div>
-    <div class="container" id="instructions">
-        <h4>You will be given a randop=m number at the start of the game</h4>
-        <h4>There are four crytals below. By clicking on a crystal you will add a specific amount of points to your
-            total score.</h4>
-        <h4>You win the game by matching your total score to random number, you lose the game if your total score goes
-            above the random number.</h4>
-        <h4>The value of each crystal is hidden from you until you click on it.</h4>
-        <h4>Each time when the game starts, the game will change the value of each crystal.</h4>
+    <div class="container" id="header">
+        <h3>Crystals Collector</h3>
     </div>
+
+    <br>
+
+    <div class="container" id="instructions">
+        <h5>You will be given a random number at the start of the game</h5>
+        <h5>There are four crytals below. By clicking on a crystal you will add a specific amount of points to your
+            total score.</h5>
+        <h5>You win the game by matching your total score to random number, you lose the game if your total score goes
+            above the random number.</h5>
+        <h5>The value of each crystal is hidden from you until you click on it.</h5>
+        <h5>Each time when the game starts, the game will change the value of each crystal.</h5>
+    </div>
+
+    <br>
+
     <div class="container">
         <div class="numberToMatch">
-            <h4>Number To Get:
+            <h5>Number To Get:
                 <span id="randomNumber"></span>
-            </h4>
+            </h5>
         </div>
 
+        <br>
 
         <div class="winsAndLosses">
-            <h4>Wins:
-                <span id="numberWins"></span>
-                </br>
-                Losses:
-                <span id="numberLosses"></span>
-            </h4>
+            <h5 class="wl">Wins:
+                <span id="wins"></span>
+            </h5>
+            </br>
+            <h5 class="wl">Losses:
+                <span id="losses"></span>
+            </h5>
         </div>
+
+        <br>
+
         <div class="row">
             <input type="image" class=" col-1 button one" style="height: 100px; width: 50px;"
                 src="assets\images\greencrystal.jpg"></input>
@@ -49,10 +62,12 @@
                 src="assets\images\purplecrystal.jpg"></input>
         </div>
 
-        <div class="userTotal">
-            <h4>Your total score is:
+        <br>
+
+        <div class="total">
+            <h5>Your total score is:
                 <span id="finalTotal"></span>
-            </h4>
+            </h5>
         </div>
     </div>
 </body>

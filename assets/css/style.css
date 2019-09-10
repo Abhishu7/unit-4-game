@@ -1,5 +1,35 @@
 #instructions {
     background: lightcoral;
+    margin: auto;
+    padding: 10px
+
+}
+
+#header {
+    background: lightcoral;
+    margin: auto;
+    padding: 10px
+}
+
+.numberToMatch {
+    background: darkmagenta;
+    color: antiquewhite;
+    margin: auto;
+    padding: 10px;
+}
+
+.wl {
+    background: orange;
+    color: antiquewhite;
+    margin: auto;
+    padding: 10px;
+}
+
+.total{
+    background: maroon;
+    color: antiquewhite;
+    margin: auto;
+    padding: 10px;
 }
 
 body {
