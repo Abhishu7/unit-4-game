@@ -20,15 +20,15 @@ $(document).ready(function () {
         randomNumber = Math.floor(Math.random() * 102) + 19;
         console.log(randomNumber);
         $("#randomNumber").text(randomNumber);
-        total = 0
+        total = 0;
         rock1 = Math.floor(Math.random() * 12) + 1;
-        console.log(rock1)
+        console.log(rock1);
         rock2 = Math.floor(Math.random() * 12) + 1;
-        console.log(rock2)
+        console.log(rock2);
         rock3 = Math.floor(Math.random() * 12) + 1;
-        console.log(rock3)
+        console.log(rock3);
         rock4 = Math.floor(Math.random() * 12) + 1;
-        console.log(rock4)
+        console.log(rock4);
 
     }
 
@@ -38,10 +38,12 @@ $(document).ready(function () {
         if (total == randomNumber) {
             wins++;
             $("#wins").text(wins);
+            alert("You're a winner!!!!!!!!");
             reset();
         } else if (total > randomNumber) {
             losses++;
-            $("#losses").text(losses)
+            $("#losses").text(losses);
+            alert("You're a loser........");
             reset();
         }
 
@@ -53,10 +55,12 @@ $(document).ready(function () {
         if (total == randomNumber) {
             wins++;
             $("#wins").text(wins);
+            alert("You're a winner!!!!!!!!");
             reset();
         } else if (total > randomNumber) {
             losses++;
-            $("#losses").text(losses)
+            $("#losses").text(losses);
+            alert("You're a loser........");
             reset();
         }
 
@@ -68,10 +72,12 @@ $(document).ready(function () {
         if (total == randomNumber) {
             wins++;
             $("#wins").text(wins);
+            alert("You're a winner!!!!!!!!");
             reset();
         } else if (total > randomNumber) {
             losses++;
             $("#losses").text(losses)
+            alert("You're a loser........");
             reset();
         }
 
@@ -83,10 +89,12 @@ $(document).ready(function () {
         if (total == randomNumber) {
             wins++;
             $("#wins").text(wins);
+            alert("You're a winner!!!!!!!!");
             reset();
         } else if (total > randomNumber) {
             losses++;
-            $("#losses").text(losses)
+            $("#losses").text(losses);
+            alert("You're a loser........");
             reset();
         }
     });
