@@ -1,47 +1,94 @@
 $(document).ready(function () {
-var wins = 0;
-var losses = 0;
-var total = 0;
+    var wins = 0;
+    var losses = 0;
+    var total = 0;
 
-var num1 = Math.floor(Math.random() * 9) + 1;
-    console.log(num1)
-var num2 = Math.floor(Math.random() * 9) + 1;
-    console.log(num2)
-var num3 = Math.floor(Math.random() * 9) + 1;
-    console.log(num3)
-var num4 = Math.floor(Math.random() * 9) + 1;
-    console.log(num4)
+    var rock1 = Math.floor(Math.random() * 12) + 1;
+    console.log(rock1)
+    var rock2 = Math.floor(Math.random() * 12) + 1;
+    console.log(rock2)
+    var rock3 = Math.floor(Math.random() * 12) + 1;
+    console.log(rock3)
+    var rock4 = Math.floor(Math.random() * 12) + 1;
+    console.log(rock4)
 
-function winning() {
-    wins++;
-    $("#wins").text("Wins: " + wins);
-    replay()
-}
-function losing() {
-    wins++;
-    $("#losses").text("Losses: " + losses);
-    replay()
-}
-
-
-var randomNumber = Math.floor(Math.random() * 102) + 19;
+    var randomNumber = Math.floor(Math.random() * 102) + 19;
     console.log(randomNumber);
     $("#randomNumber").text(randomNumber);
 
-$(".one").on("click", function () {
+    function reset() {
+        randomNumber = Math.floor(Math.random() * 102) + 19;
+        console.log(randomNumber);
+        $("#randomNumber").text(randomNumber);
+        total = 0
+        rock1 = Math.floor(Math.random() * 12) + 1;
+        console.log(rock1)
+        rock2 = Math.floor(Math.random() * 12) + 1;
+        console.log(rock2)
+        rock3 = Math.floor(Math.random() * 12) + 1;
+        console.log(rock3)
+        rock4 = Math.floor(Math.random() * 12) + 1;
+        console.log(rock4)
+
+    }
+
+    $(".one").on("click", function () {
+        total = total + rock1;
+        $('#finalTotal').text(total);
+        if (total == randomNumber) {
+            wins++;
+            $("#wins").text(wins);
+            reset();
+        } else if (total > randomNumber) {
+            losses++;
+            $("#losses").text(losses)
+            reset();
+        }
 
     });
 
-$(".two").on("click", function () {
-    
+    $(".two").on("click", function () {
+        total = total + rock2;
+        $('#finalTotal').text(total);
+        if (total == randomNumber) {
+            wins++;
+            $("#wins").text(wins);
+            reset();
+        } else if (total > randomNumber) {
+            losses++;
+            $("#losses").text(losses)
+            reset();
+        }
+
     });
-    
-$(".three").on("click", function () {
-    
+
+    $(".three").on("click", function () {
+        total = total + rock3;
+        $('#finalTotal').text(total);
+        if (total == randomNumber) {
+            wins++;
+            $("#wins").text(wins);
+            reset();
+        } else if (total > randomNumber) {
+            losses++;
+            $("#losses").text(losses)
+            reset();
+        }
+
     });
-    
-$(".four").on("click", function () {
-        
+
+    $(".four").on("click", function () {
+        total = total + rock4;
+        $('#finalTotal').text(total);
+        if (total == randomNumber) {
+            wins++;
+            $("#wins").text(wins);
+            reset();
+        } else if (total > randomNumber) {
+            losses++;
+            $("#losses").text(losses)
+            reset();
+        }
     });
 });
 
