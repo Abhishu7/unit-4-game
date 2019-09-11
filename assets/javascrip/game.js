@@ -20,7 +20,8 @@ $(document).ready(function () {
         randomNumber = Math.floor(Math.random() * 102) + 19;
         console.log(randomNumber);
         $("#randomNumber").text(randomNumber);
-        total = 0;
+        total = 0
+        $("#finalTotal").text(total);
         rock1 = Math.floor(Math.random() * 12) + 1;
         console.log(rock1);
         rock2 = Math.floor(Math.random() * 12) + 1;
